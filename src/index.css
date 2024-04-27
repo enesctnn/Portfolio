@@ -15,10 +15,10 @@
     }
 
     body {
-        @apply font-ubuntu h-full w-full antialiased;
+        @apply h-full w-full font-ubuntu antialiased;
     }
 
     main#root {
-        @apply relative flex h-full w-full flex-col bg-ellipse from-blue-700 to-blue-950;
+        @apply relative flex h-full w-full flex-col bg-gradient-to-b from-[#111] to-black;
     }
-}
+} 

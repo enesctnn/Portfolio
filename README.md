@@ -65,7 +65,7 @@ In the project directory, you can run:
   # or
   yarn dev
   ```
-  This command starts the development server at `http://localhost:3000`.
+  This command starts the development server at `http://localhost:5173`.
 
 - **Build**:
   ```bash
@@ -81,7 +81,7 @@ In the project directory, you can run:
   # or
   yarn serve
   ```
-  This serves the production build at `http://localhost:5000`.
+  This serves the production build at `http://localhost:5173`.
 
 ## Project Structure
 

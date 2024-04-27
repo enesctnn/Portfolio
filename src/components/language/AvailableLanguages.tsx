@@ -11,7 +11,7 @@ export const AvailableLanguages = ({ onClick }: { onClick: () => void }) => {
     };
 
     return (
-        <ul className="absolute mt-2 flex w-full flex-col items-center justify-center gap-y-1">
+        <ul className="bg-uranian_blue-800 absolute mt-2 flex w-full flex-col items-center justify-center gap-y-1 rounded-md p-1">
             <LanguageSelectorButton
                 selectedLanguage={i18n.language}
                 onClick={languageChangeHandler}

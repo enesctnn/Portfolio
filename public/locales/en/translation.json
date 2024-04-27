@@ -1,3 +1,6 @@
 {
-    "resume": "I graduated from Ankara University Computer Programming in 2022. I am currently developing Front End Web applications using HTML5, CSS3, Javascript, Reactjs and Nextjs14 using TypeScript technologies. You may visit https://github.com/enesctnn for the websites I developed in these languages. Every step I took in the software, every new information I learned and needed to learn, made me even more curious, and I look forward to learning new things. As a Front End Web developer, I love researching and reading documentation. I also have (beginner-intermediate) level knowledge of Adobe's Photoshop, After Effects and Premiere Pro technologies."
+    "hero": {
+        "title": "<0><1>Hello, my name is Muhammet Enes Çetin.</1> I develop frontend web applications with Reactjs.</0>",
+        "resume": "I graduated from Ankara University Computer Programming in 2022. I am currently developing Front End Web applications using HTML5, CSS3, Javascript, Reactjs and Nextjs14 using TypeScript technologies. You may visit https://github.com/enesctnn for the websites I developed in these languages. Every step I took in the software, every new information I learned and needed to learn, made me even more curious, and I look forward to learning new things. As a Front End Web developer, I love researching and reading documentation. I also have (beginner-intermediate) level knowledge of Adobe's Photoshop, After Effects and Premiere Pro technologies."
+    }
 }

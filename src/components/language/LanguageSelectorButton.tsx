@@ -11,7 +11,7 @@ export const LanguageSelectorButton = ({
         <li key={lng} className="w-full">
             <button
                 type="button"
-                className="w-full rounded-md bg-slate-300 py-1 uppercase disabled:bg-slate-400"
+                className="bg-uranian_blue disabled:bg-uranian_blue-300 hover:bg-uranian_blue-400 active:bg-uranian_blue-300 w-full rounded-md py-1 uppercase disabled:ring-1 disabled:ring-white"
                 onClick={onClick.bind(null, lng)}
                 disabled={lng.includes(selectedLanguage)}
             >
