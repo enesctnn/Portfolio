@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-drag-none {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+@layer base {
+    html {
+        @apply h-full w-full;
+    }
+
+    body {
+        @apply font-ubuntu h-full w-full antialiased;
+    }
+
+    main#root {
+        @apply relative flex h-full w-full flex-col bg-ellipse from-blue-700 to-blue-950;
+    }
+}
