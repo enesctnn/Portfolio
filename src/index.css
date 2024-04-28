@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 .user-drag-none {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 @layer base {
-    html {
-        @apply h-full w-full;
-    }
+  html {
+    @apply h-full;
+  }
 
-    body {
-        @apply h-full w-full font-ubuntu antialiased;
-    }
+  body {
+    @apply relative h-full font-ubuntu antialiased;
+  }
 
-    main#root {
-        @apply relative flex h-full w-full flex-col bg-gradient-to-b from-[#111] to-black;
-    }
-} 
+  main#root {
+    @apply relative flex min-h-screen flex-col bg-gradient-to-b from-[#111] to-black;
+  }
+}

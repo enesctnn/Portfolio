@@ -1,6 +1,6 @@
 {
-    "hero": {
-        "title": "<0><1>Merhaba, Adım Muhammet Enes Çetin.</1> Reactjs ile Frontend Web Uygulamaları Geliştiriyorum</0>",
-        "resume": "2022 yılında Ankara Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Şu anda HTML5, CSS3, Javascript, Reactjs ve Nextjs14 'ü TypeScript teknolojilerinden yararlanarak Front End Web uygulamaları geliştiriyorum. Bu dillerde geliştirdiğim web siteleri için https://github.com/enesctnn adresini ziyaret edebilirsiniz. Yazılımda attığım her adım, öğrendiğim ve öğrenmem gereken her yeni bilgi beni daha da meraklandırdı ve yeni şeyler öğrenmeyi sabırsızlıkla bekliyorum. Bir Front End Web geliştiricisi olarak, araştırmayı ve döküman okumayı çok seviyorum . Ayrıca Adobe'nin Photoshop, After Effects ve Premiere Pro teknolojileri hakkında (başlangıç-orta) düzeyde bilgi sahibiyim."
-    }
+  "hero": {
+    "title": "<0><0>Ben Muhammet Enes Çetin,</0> Türkiye'de frontend web geliştiricisiyim.</0>",
+    "resume": "2022 yılı Ankara Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Şu anda HTML5, CSS3, Javascript, Reactjs ve Nextjs14 'ü TypeScript teknolojilerinden yararlanarak Front End Web uygulamaları geliştiriyorum. Yazılımda attığım her adım, öğrendiğim ve öğrenmem gereken her yeni bilgi beni daha da meraklandırdı ve yeni şeyler öğrenmeyi sabırsızlıkla bekliyorum. Bir Front End Web geliştiricisi olarak, araştırmayı ve döküman okumayı çok seviyorum ."
+  }
 }

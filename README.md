@@ -60,19 +60,23 @@ Before you begin, ensure you have Node.js and npm (or yarn) installed on your ma
 In the project directory, you can run:
 
 - **Development Server**:
+
   ```bash
   npm run dev
   # or
   yarn dev
   ```
+
   This command starts the development server at `http://localhost:5173`.
 
 - **Build**:
+
   ```bash
   npm run build
   # or
   yarn build
   ```
+
   Builds the app for production to the `dist` folder.
 
 - **Preview the Build**:
