@@ -1,33 +1,34 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import pp from '../../assets/pp.jpg';
-import { MaxWidthWrapper } from '../ui/max-width-wrapper';
+import { Navbar } from './nav/Navbar';
+import { Social } from './Social';
 
 function Hero() {
   const { t } = useTranslation(undefined, { keyPrefix: 'hero' });
 
   return (
-    <MaxWidthWrapper>
-      <article className="flex flex-col items-center justify-center text-center text-white">
-        <div className="h-52 w-52">
+    <div className="xl:3/12 mx-auto h-full flex-col items-center justify-center font-bold text-white max-lg:space-y-4 lg:fixed lg:w-[350px] lg:items-start lg:py-20">
+      <header className="flex flex-col items-center justify-start gap-4 lg:flex-row">
+        <div className="flex h-full w-52 lg:w-28">
           <img
             src={pp}
-            alt="Profile Picture"
-            className="rounded-full object-cover"
+            alt="user picture"
+            className="rounded-full object-cover object-center"
+            loading="lazy"
           />
         </div>
-        <section className="space-y-6">
-          <Trans i18nKey="hero.title">
-            <h1 className="text-4xl font-bold !leading-tight md:text-7xl">
-              <span className="bg-gradient-to-r from-lemon_chiffon via-uranian_blue to-mauve bg-clip-text text-transparent">
-                Hi! My name is Muhammet Enes Çetin,
-              </span>
-              frontend web developer in Türkiye.
-            </h1>
-          </Trans>
-          <p className="text-md leading-relaxed md:text-2xl">{t('resume')}</p>
-        </section>
-      </article>
-    </MaxWidthWrapper>
+        <div>
+          <h1 className="bg-gradient-to-r from-lemon_chiffon via-uranian_blue to-mauve bg-clip-text text-4xl !leading-tight text-transparent">
+            {t('header.name')}
+          </h1>
+          <p className="text-lg max-lg:text-center">
+            {t('header.description')}
+          </p>
+        </div>
+      </header>
+      <Navbar />
+      <Social />
+    </div>
   );
 }
 

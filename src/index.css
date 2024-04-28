@@ -15,10 +15,10 @@
   }
 
   body {
-    @apply relative h-full font-ubuntu antialiased;
+    @apply relative h-full font-ubuntu text-muted antialiased;
   }
 
   main#root {
-    @apply relative flex min-h-screen flex-col bg-gradient-to-b from-[#111] to-black;
+    @apply relative z-50 flex min-h-screen flex-col bg-[#111];
   }
 }

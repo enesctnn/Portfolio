@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../../lib/utils';
 
@@ -13,22 +13,27 @@ export const SelectedLanguage = ({
     i18n: { language },
   } = useTranslation();
 
+  const animateArrow: Variants = {
+    initial: { x: 0, rotate: 90 },
+    animate: { x: isOpen ? -8 : 10, transition: { duration: 0.08 } },
+  };
+
   return (
-    <button
+    <motion.button
       className={cn(
-        'inline-flex w-max items-center justify-center rounded-md bg-uranian_blue p-1 uppercase ring-1 ring-uranian_blue-300 transition-colors hover:bg-uranian_blue-400',
-        isOpen && 'bg-uranian_blue-300'
+        'z-50 inline-flex w-max items-center justify-center rounded-md bg-muted p-1 uppercase ring-2 ring-mauve transition-all hover:bg-gray-200',
+        isOpen && 'bg-white'
       )}
+      initial="initial"
+      animate="initial"
+      whileTap="animate"
       type="button"
       onClick={onClick}
       aria-expanded={isOpen}
     >
-      {language}
       <motion.svg
-        animate={{
-          rotate: isOpen ? 0 : 90,
-        }}
-        className="-me-1 h-5 w-5"
+        variants={animateArrow}
+        className="mr-1 h-5 w-5 outline-none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
@@ -40,6 +45,7 @@ export const SelectedLanguage = ({
           clipRule="evenodd"
         />
       </motion.svg>
-    </button>
+      {language}
+    </motion.button>
   );
 };

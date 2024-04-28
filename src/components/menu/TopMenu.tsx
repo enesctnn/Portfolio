@@ -1,8 +1,9 @@
-import LanguageDropDown from '../language/LanguageDropDown';
-import { MaxWidthWrapper } from '../ui/max-width-wrapper';
+import { LanguageDropDown } from '../language/LanguageDropDown';
 
-export const TopMenu = () => (
-  <MaxWidthWrapper className="flex h-14 w-full items-center">
+const TopMenu = () => (
+  <div className="top-0 h-14 w-full p-4 lg:fixed ">
     <LanguageDropDown />
-  </MaxWidthWrapper>
+  </div>
 );
+
+export default TopMenu;

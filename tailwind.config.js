@@ -8,6 +8,10 @@ export default {
       },
       fontFamily: { ubuntu: ['"Ubuntu"', 'sans-serif'] },
       colors: {
+        muted: {
+          DEFAULT: 'rgb(193, 195, 199)',
+          foreground: 'hsl(215.4 16.3% 46.9%)',
+        },
         carnation_pink: {
           DEFAULT: '#ff99c8',
           100: '#520026',

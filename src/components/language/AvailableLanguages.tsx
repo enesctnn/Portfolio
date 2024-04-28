@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { LanguageSelectorButton } from './LanguageSelectorButton';
 
-const availableLanguages = ['en', 'tr'];
+const AVAILABLE_LANGUAGES = ['en', 'tr'];
 
 export const AvailableLanguages = ({ onClick }: { onClick: () => void }) => {
   const { i18n } = useTranslation();
@@ -12,14 +12,14 @@ export const AvailableLanguages = ({ onClick }: { onClick: () => void }) => {
 
   return (
     <ul
-      className="absolute mt-2 flex w-full flex-col items-center justify-center gap-y-1 rounded-md bg-uranian_blue-800 p-1"
+      className="absolute -left-[100px] -top-[2px] flex w-max items-center justify-center gap-x-2 rounded-md p-1"
       role="menu"
       aria-orientation="vertical"
     >
       <LanguageSelectorButton
         selectedLanguage={i18n.language}
         onClick={languageChangeHandler}
-        languages={availableLanguages}
+        languages={AVAILABLE_LANGUAGES}
       />
     </ul>
   );

@@ -1,6 +1,18 @@
 {
   "hero": {
-    "title": "<0><0>I'm Muhammet Enes Çetin, </0>frontend web developer based in Türkiye.</0>",
-    "resume": "I graduated from Ankara University Computer Programming in 2022. I'm currently developing Front End Web applications using HTML5, CSS3, Javascript, Reactjs and Nextjs14 using TypeScript technologies. Every step I took in the software, every new information I learned and needed to learn, made me even more curious, and I look forward to learning new things. As a Front End Web developer, I love researching and reading documentation."
+    "header": {
+      "name": "Muhammet Enes Çetin",
+      "description": "JR. Frontend Developer Based In Türkiye."
+    },
+    "navigation": {
+      "about": "ABOUT",
+      "projects": "PROJECTS",
+      "experience": "EXPERIENCE"
+    }
+  },
+  "resume": {
+    "title": "ABOUT",
+    "description": "I graduated from Ankara University Computer Programming in 2022. I'm currently developing Frontend Web applications using HTML5, CSS3, Javascript, Reactjs and Nextjs14 using TypeScript technologies.\nEvery step I took in the software, every new information I learned and needed to learn, made me even more curious, and I look forward to learning new things.\nAs a Frontend Web developer, I love researching and reading documentation.",
+    "view": "View The Full Resume"
   }
 }
