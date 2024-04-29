@@ -1,9 +1,7 @@
-import { motion, Variants } from 'framer-motion';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { scroller, scrollSpy } from 'react-scroll';
-
-const NAVITEMS: string[] = ['about', 'projects', 'experience'];
+import { useEffect, useState } from 'react';
+import { Events, scroller, scrollSpy } from 'react-scroll';
+import { NAVITEMS } from '../../../config/navigation';
+import { NavItem } from './NavItem';
 
 const scrollerConfig = {
   smooth: true,
@@ -12,44 +10,33 @@ const scrollerConfig = {
 };
 
 export function NavItems() {
-  const { t } = useTranslation(undefined, { keyPrefix: 'hero.navigation' });
+  const navigateTo = window.location.href.split('#')[1];
+  const [activeItem, setActiveItem] = useState<string>(navigateTo);
 
-  const animateStick: Variants = {
-    initial: { width: '3rem', opacity: 0.4 },
-    animate: { width: '6rem', opacity: 1 },
+  const smoothScrollHandler = (elementToGo: (typeof NAVITEMS)[number]) => {
+    scroller.scrollTo(elementToGo, scrollerConfig);
+    setActiveItem(elementToGo);
   };
 
-  const smoothScrollHandler = (elementToGo: string) =>
-    scroller.scrollTo(elementToGo, scrollerConfig);
-
-  const navigateTo = window.location.href.split('#')[1];
-
   useEffect(() => {
-    scroller.scrollTo(navigateTo, scrollerConfig);
+    console.log(navigateTo);
+    Events.scrollEvent.register(navigateTo, (to, element) => {
+      console.log(navigateTo, to, element);
+    });
     scrollSpy.update();
+
+    return () => Events.scrollEvent.remove(navigateTo);
   }, [navigateTo]);
 
   return (
     <ul className="mt-16 w-max">
       {NAVITEMS.map(item => (
-        <li key={item}>
-          <motion.a
-            onClick={() => smoothScrollHandler(item)}
-            href={`#${item}`}
-            className="group flex items-center justify-start py-3"
-            initial="initial"
-            animate="initial"
-            whileHover="animate"
-          >
-            <motion.span
-              className="mr-4 h-px bg-nyanza group-hover:bg-nyanza-400"
-              variants={animateStick}
-            />
-            <span className="text-nyanza-600 opacity-80 transition-all group-hover:text-nyanza-400 group-hover:opacity-100">
-              {t(item)}
-            </span>
-          </motion.a>
-        </li>
+        <NavItem
+          key={item}
+          item={item}
+          onClick={smoothScrollHandler.bind(undefined, item)}
+          isActive={item === activeItem}
+        />
       ))}
     </ul>
   );

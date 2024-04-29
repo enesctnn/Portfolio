@@ -17,7 +17,7 @@ export function About() {
         </header>
         <p>{t('description')}</p>
       </section>
-      <a href="cv.pdf" target="_blank" className="group">
+      <a href="cv.pdf" target="_blank" className="group w-max">
         <ExternalLinkArrow title={t('view')} />
       </a>
     </Card>
