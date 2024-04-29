@@ -21,7 +21,7 @@ export const SelectedLanguage = ({
   return (
     <motion.button
       className={cn(
-        'z-50 inline-flex w-max items-center justify-center rounded-md bg-muted p-1 uppercase ring-2 ring-mauve transition-all hover:bg-gray-200',
+        'z-50 inline-flex w-max items-center justify-center rounded-md bg-muted p-1 uppercase ring-2 ring-nyanza-300 transition-all hover:bg-gray-200',
         isOpen && 'bg-white'
       )}
       initial="initial"

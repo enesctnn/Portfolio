@@ -2,22 +2,25 @@ import { useTranslation } from 'react-i18next';
 import { Card } from '../ui/card';
 import { ExternalLinkArrow } from '../ui/external-link-arrow';
 
-export function About() {
-  const { t } = useTranslation(undefined, { keyPrefix: 'resume' });
+export default function About() {
+  const {
+    i18n: { language },
+    t,
+  } = useTranslation(undefined, { keyPrefix: 'resume' });
 
   return (
     <Card
       locationName="about"
       role="article"
-      className="gap-y-8 whitespace-pre-line text-sm"
+      className="whitespace-pre-line"
+      title={t('title')}
     >
-      <section className="space-y-2">
-        <header className="lg:hidden">
-          <h2 className="text-md">{t('title')}</h2>
-        </header>
-        <p>{t('description')}</p>
-      </section>
-      <a href="cv.pdf" target="_blank" className="group w-max">
+      <p className="mb-10">{t('description')}</p>
+      <a
+        href={language.includes('tr') ? 'CV_tr.pdf' : 'CV_en.pdf'}
+        target="_blank"
+        className="group w-max"
+      >
         <ExternalLinkArrow title={t('view')} />
       </a>
     </Card>

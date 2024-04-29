@@ -21,7 +21,7 @@ export const LanguageSelectorButton = ({
       <button
         type="button"
         className="w-full rounded-md bg-white px-3 py-1 uppercase opacity-60 transition-all hover:scale-110 hover:opacity-80 
-        active:opacity-90 disabled:pointer-events-none disabled:opacity-100 disabled:ring-2 disabled:ring-mauve"
+        active:opacity-90 disabled:pointer-events-none disabled:opacity-100 disabled:ring-2 disabled:ring-nyanza-300"
         onClick={onClick.bind(null, lng)}
         disabled={lng.includes(selectedLanguage)}
       >

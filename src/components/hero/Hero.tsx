@@ -7,28 +7,30 @@ function Hero() {
   const { t } = useTranslation(undefined, { keyPrefix: 'hero' });
 
   return (
-    <div className="xl:3/12 mx-auto h-full flex-col items-center justify-center font-bold text-white max-lg:space-y-4 lg:fixed lg:w-[350px] lg:items-start lg:py-20">
-      <header className="flex flex-col items-center justify-start gap-4 lg:flex-row">
-        <div className="flex h-full w-52 lg:w-28">
-          <img
-            src={pp}
-            alt="user picture"
-            className="rounded-full object-cover object-center"
-            loading="lazy"
-          />
+    <header className=" mx-auto flex-col items-center justify-center font-bold text-white lg:sticky lg:top-0 lg:flex lg:min-h-screen lg:w-1/2 lg:flex-col lg:items-start lg:!justify-between lg:py-24">
+      <div>
+        <div className="flex flex-col items-center justify-start gap-4 lg:flex-row">
+          <div className="w-max shrink-0">
+            <img
+              src={pp}
+              alt="user picture"
+              className="h-52 w-52 rounded-full object-cover object-center"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h1 className="bg-gradient-to-r from-lemon_chiffon via-uranian_blue to-mauve bg-clip-text text-4xl !leading-tight text-transparent">
+              {t('header.name')}
+            </h1>
+            <p className="text-lg max-lg:text-center">
+              {t('header.description')}
+            </p>
+          </div>
         </div>
-        <div>
-          <h1 className="bg-gradient-to-r from-lemon_chiffon via-uranian_blue to-mauve bg-clip-text text-4xl !leading-tight text-transparent">
-            {t('header.name')}
-          </h1>
-          <p className="text-lg max-lg:text-center">
-            {t('header.description')}
-          </p>
-        </div>
-      </header>
-      <Navbar />
+        <Navbar />
+      </div>
       <Social />
-    </div>
+    </header>
   );
 }
 

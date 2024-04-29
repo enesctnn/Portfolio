@@ -12,7 +12,6 @@ This is a portfolio website project created using Vite with React and TypeScript
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Available Scripts](#available-scripts)
-  - [Project Structure](#project-structure)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -38,13 +37,13 @@ Before you begin, ensure you have Node.js and npm (or yarn) installed on your ma
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/enesctnn/Portfolio
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd portfolio-website
+   cd Portfolio
    ```
 
 3. Install dependencies:
@@ -77,33 +76,6 @@ In the project directory, you can run:
   yarn build
   ```
 
-  Builds the app for production to the `dist` folder.
-
-- **Preview the Build**:
-  ```bash
-  npm run serve
-  # or
-  yarn serve
-  ```
-  This serves the production build at `http://localhost:5173`.
-
-## Project Structure
-
-The project structure is organized as follows:
-
-```
-portfolio-website/
-├── public/              # Public assets
-├── src/                 # Source files
-│   ├── components/      # React components
-│   ├── pages/           # Website pages
-│   ├── App.tsx          # Main application component
-│   └── index.tsx        # Entry point
-├── .gitignore           # Git ignore file
-├── package.json         # NPM package configuration
-├── README.md            # Project documentation (you are here)
-└── tsconfig.json        # TypeScript configuration
-```
 
 ## Contributing
 
@@ -112,7 +84,3 @@ Contributions are welcome! Please fork this repository and create a pull request
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README to better suit your project and add any additional sections or details you find relevant. Good luck with your portfolio website project!

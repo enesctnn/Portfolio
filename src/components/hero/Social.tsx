@@ -1,16 +1,22 @@
 import { ACCOUNTS } from '../../config/socials';
 
 export const Social = () => (
-  <div className="mt-auto flex h-full w-max items-center gap-x-10 max-lg:mx-auto">
-    {ACCOUNTS.map(({ icon: Icon, href }) => (
-      <a
+  <ul className="ml-1 mt-8 flex items-center max-lg:justify-center">
+    {ACCOUNTS.map(({ icon: Icon, href, platform }) => (
+      <li
         key={href}
-        href={href}
-        target="_blank"
-        className="text-nyanza opacity-60 transition-all hover:opacity-100"
+        className="mr-5 shrink-0 text-xs text-nyanza opacity-60 transition-all hover:opacity-100"
       >
-        <Icon size={32} />
-      </a>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer noopener"
+          title={platform}
+          aria-label={platform + ' (opens in a new tab)'}
+        >
+          <Icon size={32} />
+        </a>
+      </li>
     ))}
-  </div>
+  </ul>
 );
