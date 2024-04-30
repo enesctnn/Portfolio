@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "header": {
+      "name": "Muhammet Enes Çetin",
+      "description": "Türkiye'de JR. Frontend Developer"
+    },
+    "navigation": {
+      "about": "HAKKIMDA",
+      "projects": "PROJELER",
+      "experience": "DENEYİMLERİM"
+    }
+  },
+  "resume": {
+    "title": "HAKKIMDA",
+    "description": "2022 yılı Ankara Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Şu anda HTML5, CSS3, Javascript, Reactjs ve Nextjs14 'ü TypeScript teknolojilerinden yararlanarak Frontend Web uygulamaları geliştiriyorum.\nYazılımda attığım her adım, öğrendiğim ve öğrenmem gereken her yeni bilgi beni daha da meraklandırdı ve yeni şeyler öğrenmeyi sabırsızlıkla bekliyorum.\nBir Frontend Web geliştiricisi olarak, araştırmayı ve döküman okumayı çok seviyorum .",
+    "view": "Tüm Öz Geçmişi Görüntüle"
+  }
+}
