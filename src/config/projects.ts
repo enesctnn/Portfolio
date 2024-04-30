@@ -5,8 +5,7 @@ export const PROJECTS: {
   title: string;
   href: string;
   description: { tr: string; en: string };
-  date?: string;
-  img?: { alt: string; src: string; gif?: string };
+  img: { alt: string; src: string; gif?: string };
   technologies?: string[];
 }[] = [
   {
@@ -26,7 +25,6 @@ export const PROJECTS: {
       'i18next',
       'Framer-Motion',
     ],
-    date: '',
     img: {
       src: weatherAppImg,
       alt: 'weather app scrolling gif',

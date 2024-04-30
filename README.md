@@ -14,6 +14,7 @@ This is a portfolio website project created using Vite with React and TypeScript
     - [Available Scripts](#available-scripts)
   - [Contributing](#contributing)
   - [License](#license)
+  - [Deployment](#deployment)
 
 ## Introduction
 
@@ -66,16 +67,7 @@ In the project directory, you can run:
   yarn dev
   ```
 
-  This command starts the development server at `http://localhost:5173`.
-
-- **Build**:
-
-  ```bash
-  npm run build
-  # or
-  yarn build
-  ```
-
+  This command starts the development server at `http://localhost:5173/Portfolio/`.
 
 ## Contributing
 
@@ -84,3 +76,9 @@ Contributions are welcome! Please fork this repository and create a pull request
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Deployment
+
+This project is deployed and hosted on Github Pages. You can access the live version by following this link: [Portfolio Live Demo](https://enesctnn.github.io/Portfolio/)

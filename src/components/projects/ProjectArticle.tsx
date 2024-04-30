@@ -8,22 +8,20 @@ export const ProjectArticle = ({
   technologies,
   projectLink,
   img,
-  date,
   description,
 }: {
   projectLink: string;
   title: string;
   description: { tr: string; en: string };
-  img?: { src: string; alt: string; gif?: string };
+  img: { src: string; alt: string; gif?: string };
   date?: string;
   technologies?: string[];
 }) => (
   <HoverCard href={projectLink} role="listitem" className="gap-x-3">
-    <div className="relative flex h-full items-start py-1">
-      <h2 className="text-lg text-muted-foreground">{date}</h2>
+    <div className="relative flex py-1 ">
       <img
-        src={img?.src}
-        alt={img?.alt}
+        src={img.src}
+        alt={img.alt}
         className={cn(
           'absolute z-0 h-full scale-100 rounded-md object-contain object-center transition-all duration-500 ease-in-out',
           img?.gif &&
@@ -31,12 +29,14 @@ export const ProjectArticle = ({
         )}
         loading="lazy"
       />
-      <img
-        src={img?.gif}
-        alt={img?.alt}
-        className="absolute z-0 h-full scale-110 rounded-md object-contain object-center opacity-0 blur-md transition-all duration-500 ease-in-out group-hover:z-10 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none"
-        loading="lazy"
-      />
+      {img.gif && (
+        <img
+          src={img.gif}
+          alt={img.alt}
+          className="absolute z-0 h-full scale-110 rounded-md object-contain object-center opacity-0 blur-md transition-all duration-500 ease-in-out group-hover:z-10 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none"
+          loading="lazy"
+        />
+      )}
     </div>
     <div className="flex flex-col gap-y-2">
       <ExternalLinkArrow title={title} />

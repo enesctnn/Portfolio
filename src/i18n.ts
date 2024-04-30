@@ -8,8 +8,10 @@ i18next
   .use(I18NextHttpBackend)
   .use(initReactI18next)
   .init({
+    lng: 'en',
     fallbackLng: 'en',
     debug: true,
+    backend: { loadPath: 'locales/{{lng}}/{{ns}}.json' },
   });
 
 export default i18next;
