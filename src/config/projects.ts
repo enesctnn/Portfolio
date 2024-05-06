@@ -36,7 +36,7 @@ export const PROJECTS: {
     },
   },
   {
-    title: 'TypeWeather',
+    title: 'Spotify Profile',
     href: 'https://github.com/enesctnn/spotify-profile-app',
     description: {
       en: 'Spotify Profile App offers deep insights into your music habits, playlist management, and personalized recommendations. Seamlessly connect your Spotify account and explore detailed data, including top artists, tracks, playlists, and recommendations tailored to your taste. Save tracks with timestamped descriptions directly to your playlists for enhanced organization. Discover new music effortlessly. Open in Spotify to delve deeper into track, artist, user, or playlist info.',

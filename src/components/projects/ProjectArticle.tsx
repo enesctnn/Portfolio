@@ -17,44 +17,46 @@ export const ProjectArticle = ({
   date?: string;
   technologies?: string[];
 }) => (
-  <HoverCard href={projectLink} role="listitem" className="gap-x-3">
-    <div className="relative flex py-1 ">
-      <img
-        src={img.src}
-        alt={img.alt}
-        className={cn(
-          'absolute z-0 h-full scale-100 rounded-md object-contain object-center transition-all duration-500 ease-in-out',
-          img?.gif &&
-            'group-hover:z-0 group-hover:scale-110 group-hover:opacity-0 group-hover:blur-md'
-        )}
-        loading="lazy"
-      />
-      {img.gif && (
+  <li className="h-full w-full">
+    <HoverCard href={projectLink} role="listitem" className="gap-x-3">
+      <div className="relative flex py-1 ">
         <img
-          src={img.gif}
+          src={img.src}
           alt={img.alt}
-          className="absolute z-0 h-full scale-110 rounded-md object-contain object-center opacity-0 blur-md transition-all duration-500 ease-in-out group-hover:z-10 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none"
+          className={cn(
+            'absolute z-0 h-full scale-100 rounded-md object-contain object-center transition-all duration-500 ease-in-out',
+            img?.gif &&
+              'group-hover:z-0 group-hover:scale-110 group-hover:opacity-0 group-hover:blur-md'
+          )}
           loading="lazy"
         />
-      )}
-    </div>
-    <div className="flex flex-col gap-y-2">
-      <ExternalLinkArrow title={title} />
-      <ProjectDescription description={description} />
-      <div
-        className="mt-auto flex w-full flex-wrap gap-1"
-        aria-label="technologies used:"
-      >
-        {technologies &&
-          technologies.map(feature => (
-            <p
-              key={feature}
-              className="w-max rounded-xl bg-nyanza-100 px-2 py-1 text-xs text-nyanza"
-            >
-              {feature}
-            </p>
-          ))}
+        {img.gif && (
+          <img
+            src={img.gif}
+            alt={img.alt}
+            className="absolute z-0 h-full scale-110 rounded-md object-contain object-center opacity-0 blur-md transition-all duration-500 ease-in-out group-hover:z-10 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none"
+            loading="lazy"
+          />
+        )}
       </div>
-    </div>
-  </HoverCard>
+      <div className="flex flex-col gap-y-2">
+        <ExternalLinkArrow title={title} />
+        <ProjectDescription description={description} />
+        <div
+          className="mt-auto flex w-full flex-wrap gap-1"
+          aria-label="technologies used:"
+        >
+          {technologies &&
+            technologies.map(feature => (
+              <p
+                key={feature}
+                className="w-max rounded-xl bg-nyanza-100 px-2 py-1 text-xs text-nyanza"
+              >
+                {feature}
+              </p>
+            ))}
+        </div>
+      </div>
+    </HoverCard>
+  </li>
 );

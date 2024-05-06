@@ -7,16 +7,18 @@ function Projects() {
   const { t } = useTranslation(undefined, { keyPrefix: 'hero.navigation' });
   return (
     <Card locationName="projects" role="list" title={t('projects')}>
-      {PROJECTS.map(project => (
-        <ProjectArticle
-          key={project.href}
-          projectLink={project.href}
-          title={project.title}
-          description={project.description}
-          technologies={project.technologies}
-          img={project.img}
-        />
-      ))}
+      <ul className="space-y-10">
+        {PROJECTS.map(project => (
+          <ProjectArticle
+            key={project.href}
+            projectLink={project.href}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            img={project.img}
+          />
+        ))}
+      </ul>
     </Card>
   );
 }
