@@ -1,5 +1,1 @@
-export const NAVITEMS = [
-  'about' as const,
-  'projects' as const,
-  'experience' as const,
-];
+export const NAVITEMS = ['about' as const, 'projects' as const];
