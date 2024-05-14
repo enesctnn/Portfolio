@@ -4,6 +4,9 @@ import weatherAppImg from '../assets/projects/typeweather/typeweather.png';
 import spotifyAppGif from '../assets/projects/spotify/spotify.gif';
 import spotifyAppImg from '../assets/projects/spotify/spotify.png';
 
+import multiSelectGif from '../assets/projects/mutliselect/multiselect.gif';
+import multiSelectImg from '../assets/projects/mutliselect/multiselect.png';
+
 export const PROJECTS: {
   title: string;
   href: string;
@@ -12,27 +15,25 @@ export const PROJECTS: {
   technologies?: string[];
 }[] = [
   {
-    title: 'TypeWeather',
-    href: 'https://typeweather-git-main-enesctnns-projects.vercel.app/',
+    title: 'Multi Select Component',
+    href: 'https://enesctnn.github.io/rick-morty-multi-select-app/',
     description: {
-      en: 'Introducing TypeWeather: an innovative weather application crafted with Vite, React, and TypeScript, delivering an immersive weather exploration journey. Engage with dynamic backgrounds, interactive graphs, and seamless automatic location detection for an enriched experience. Powered by modern technologies, TypeWeather ensures efficient state management, responsive design, and effortless navigation, enhancing user interaction and satisfaction.',
-      tr: 'TypeWeather ile tanışın: Vite, React ve TypeScript ile hazırlanmış, sürükleyici bir hava durumu keşif yolculuğu sunan yenilikçi bir hava durumu uygulaması. Zenginleştirilmiş bir deneyim için dinamik arka planlar, etkileşimli grafikler ve kesintisiz otomatik konum algılamayla etkileşime geçin. Modern teknolojilerle desteklenen TypeWeather, etkili durum yönetimi, duyarlı tasarım ve zahmetsiz gezinme sağlayarak kullanıcı etkileşimini ve memnuniyetini artırır.',
+      en: 'This component provides a component that offers multiple selection functionality and can adapt to different design needs. Developed with React, TypeScript and Apollo Client, it retrieves data with GraphQL via the Rick and Morty API. Features include pulling data based on user queries, displaying character images, names, and how many episodes they appear in, adding/removing selected results, keyboard navigation support, loading status display, and error handling.',
+      tr: 'Bu komponent, çoklu seçim işlevselliği sunan ve farklı tasarım ihtiyaçlarına uyum sağlayabilen bir bileşen sunar. React, TypeScript ve Apollo Client ile geliştirilmiş olup, verileri Rick and Morty API üzerinden GraphQL ile alır. Özellikleri arasında kullanıcı sorgularına göre veri çekme, karakter resimleri, isimleri ve kaç bölümde göründüklerini gösterme, seçilen sonuçları ekleme/çıkarma, klavye gezinme desteği, yükleme durumu gösterimi ve hata işleme bulunur.',
     },
     technologies: [
       'Javascript',
       'Typescript',
       'React',
-      'React-Router',
-      'Axios',
-      'Recharts',
-      'i18next',
+      'GraphQL',
+      'ApolloClient',
+      'Tailwind',
       'Framer-Motion',
-      'Tanstack-Query',
     ],
     img: {
-      src: weatherAppImg,
-      alt: 'weather app image',
-      gif: weatherAppGif,
+      src: multiSelectImg,
+      alt: 'spotify app',
+      gif: multiSelectGif,
     },
   },
   {
@@ -50,11 +51,37 @@ export const PROJECTS: {
       'Axios',
       'Recharts',
       'Tanstack-Query',
+      'Tailwind',
     ],
     img: {
       src: spotifyAppImg,
       alt: 'spotify app',
       gif: spotifyAppGif,
+    },
+  },
+  {
+    title: 'TypeWeather',
+    href: 'https://typeweather-git-main-enesctnns-projects.vercel.app/',
+    description: {
+      en: 'Introducing TypeWeather: an innovative weather application crafted with Vite, React, and TypeScript, delivering an immersive weather exploration journey. Engage with dynamic backgrounds, interactive graphs, and seamless automatic location detection for an enriched experience. Powered by modern technologies, TypeWeather ensures efficient state management, responsive design, and effortless navigation, enhancing user interaction and satisfaction.',
+      tr: 'TypeWeather ile tanışın: Vite, React ve TypeScript ile hazırlanmış, sürükleyici bir hava durumu keşif yolculuğu sunan yenilikçi bir hava durumu uygulaması. Zenginleştirilmiş bir deneyim için dinamik arka planlar, etkileşimli grafikler ve kesintisiz otomatik konum algılamayla etkileşime geçin. Modern teknolojilerle desteklenen TypeWeather, etkili durum yönetimi, duyarlı tasarım ve zahmetsiz gezinme sağlayarak kullanıcı etkileşimini ve memnuniyetini artırır.',
+    },
+    technologies: [
+      'Javascript',
+      'Typescript',
+      'React',
+      'React-Router',
+      'Axios',
+      'Recharts',
+      'i18next',
+      'Framer-Motion',
+      'Tanstack-Query',
+      'Tailwind',
+    ],
+    img: {
+      src: weatherAppImg,
+      alt: 'weather app image',
+      gif: weatherAppGif,
     },
   },
 ];

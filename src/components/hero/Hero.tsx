@@ -7,8 +7,8 @@ function Hero() {
   const { t } = useTranslation(undefined, { keyPrefix: 'hero' });
 
   return (
-    <header className=" mx-auto flex-col items-center justify-center font-bold text-white lg:sticky lg:top-0 lg:flex lg:min-h-screen lg:w-1/2 lg:flex-col lg:items-start lg:!justify-between lg:py-24">
-      <div>
+    <header className=" mx-auto flex-col items-center justify-center font-bold text-white lg:sticky lg:top-0 lg:flex lg:min-h-screen lg:flex-col lg:items-start lg:!justify-between lg:py-24">
+      <div className="lg:w-1/2">
         <div className="flex flex-col items-center justify-start gap-4 lg:flex-row">
           <div className="w-max shrink-0">
             <img

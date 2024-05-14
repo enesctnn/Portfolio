@@ -15,7 +15,7 @@ export default function About() {
       className="whitespace-pre-line"
       title={t('title')}
     >
-      <p className="mb-10">{t('description')}</p>
+      <p className="mb-10 text-lg">{t('description')}</p>
       <a
         href={language.includes('tr') ? 'CV_tr.pdf' : 'CV_en.pdf'}
         target="_blank"

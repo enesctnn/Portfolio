@@ -14,8 +14,11 @@
     @apply h-full;
   }
   body {
-    @apply relative h-full min-w-[510px] font-ubuntu text-muted antialiased;
+    @apply relative h-full font-ubuntu text-muted antialiased;
   }
+}
+
+@layer components {
   main#root {
     @apply relative flex min-h-screen flex-col bg-[#111];
   }

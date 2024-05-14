@@ -6,19 +6,22 @@ import { ProjectArticle } from './ProjectArticle';
 function Projects() {
   const { t } = useTranslation(undefined, { keyPrefix: 'hero.navigation' });
   return (
-    <Card locationName="projects" role="list" title={t('projects')}>
-      <ul className="space-y-4">
-        {PROJECTS.map(project => (
-          <ProjectArticle
-            key={project.href}
-            projectLink={project.href}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-            img={project.img}
-          />
-        ))}
-      </ul>
+    <Card
+      locationName="projects"
+      role="list"
+      title={t('projects')}
+      className="space-y-4 w-full"
+    >
+      {PROJECTS.map(project => (
+        <ProjectArticle
+          key={project.href}
+          projectLink={project.href}
+          title={project.title}
+          description={project.description}
+          technologies={project.technologies}
+          img={project.img}
+        />
+      ))}
     </Card>
   );
 }
