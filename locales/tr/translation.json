@@ -7,12 +7,38 @@
     "navigation": {
       "about": "HAKKIMDA",
       "projects": "PROJELER",
-      "experience": "DENEYİMLERİM"
+      "contactme": "BENİMLE İRTİBATA GEÇ"
+    },
+    "contactme": {
+      "form": {
+        "legend": "Bana E-posta Gönder",
+        "name": "Adınız",
+        "email": "E-posta",
+        "message": "Mesaj",
+        "success": "E-posta gönderildi!",
+        "error": "Bir şeyler ters gitti!",
+        "placeholders": {
+          "name": "Adınız",
+          "email": "örnek@epostası.com",
+          "message": "Mesajınız..."
+        },
+        "submit": "Gönder",
+        "submitting": "Gönderiliyor...",
+        "sent": "Gönderildi!",
+        "zod": {
+          "username": "Minimum 3 Karakter!",
+          "email": "Geçersiz E-posta!",
+          "message": {
+            "min": "Minimum 5 Karakter!",
+            "max": "Maximum 500 Karakter!"
+          }
+        }
+      }
     }
   },
   "resume": {
     "title": "HAKKIMDA",
-    "description": "2022 yılı Ankara Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Şu anda HTML5, CSS3, Javascript, Reactjs ve Nextjs14 'ü TypeScript teknolojilerinden yararlanarak Frontend Web uygulamaları geliştiriyorum.\nYazılımda attığım her adım, öğrendiğim ve öğrenmem gereken her yeni bilgi beni daha da meraklandırdı ve yeni şeyler öğrenmeyi sabırsızlıkla bekliyorum.\nBir Frontend Web geliştiricisi olarak, araştırmayı ve döküman okumayı çok seviyorum .",
+    "description": "2022 yılı Ankara Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Şu anda HTML5, CSS3, Javascript, Reactjs ve Nextjs14 'ü TypeScript teknolojilerinden yararlanarak Frontend Web uygulamaları geliştiriyorum.\nYazılımda attığım her adım, öğrendiğim ve öğrenmem gereken her yeni bilgi beni daha da meraklandırdı ve yeni şeyler öğrenmeyi sabırsızlıkla bekliyorum.\nBir Frontend Web geliştiricisi olarak, araştırmayı ve döküman okumayı çok seviyorum.",
     "view": "Tüm Öz Geçmişi Görüntüle"
   }
 }
