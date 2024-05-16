@@ -26,7 +26,7 @@
         "submitting": "Gönderiliyor...",
         "sent": "Gönderildi!",
         "zod": {
-          "username": "Minimum 3 Karakter!",
+          "username": "Minimum 2 Karakter!",
           "email": "Geçersiz E-posta!",
           "message": {
             "min": "Minimum 5 Karakter!",

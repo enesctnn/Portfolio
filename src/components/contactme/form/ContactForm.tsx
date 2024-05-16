@@ -77,7 +77,7 @@ function ContactForm() {
         className={`flex flex-col gap-5 rounded-xl border border-nyanza-400 p-8 transition-colors ${error ? ' !border-red-600' : ''} ${success ? ' border-nyanza-300' : ''}`}
       >
         <legend
-          className={`px-1 text-right text-lg font-medium text-nyanza-300/90 max-lg:text-left ${error ? ' !text-red-600' : ''} ${success ? ' !text-nyanza-300' : ''}`}
+          className={`px-1 text-lg font-medium text-nyanza-300/90 lg:text-right ${error ? ' !text-red-600' : ''} ${success ? ' !text-nyanza-300' : ''}`}
         >
           {t('legend')}
         </legend>
