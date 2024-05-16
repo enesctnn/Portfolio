@@ -10,11 +10,12 @@ const scrollerConfig = {
 };
 
 export function NavItems() {
-  const navigateTo = useMemo<string>(
-    () => window.location.href.split('#')[1],
+  const navigateTo = useMemo<string | null>(
+    () => window.location.hash.split('#')[1] as (typeof NAVITEMS)[number],
     []
   );
-  const [activeItem, setActiveItem] = useState<string>(navigateTo);
+
+  const [activeItem, setActiveItem] = useState<string | null>(navigateTo);
 
   const smoothScrollHandler = (elementToGo: (typeof NAVITEMS)[number]) => {
     window.history.pushState(undefined, elementToGo, `#${elementToGo}`);
@@ -22,8 +23,10 @@ export function NavItems() {
   };
 
   useEffect(() => {
-    scroller.scrollTo(navigateTo, scrollerConfig);
-    scrollSpy.update();
+    if (navigateTo) {
+      scroller.scrollTo(navigateTo, scrollerConfig);
+      scrollSpy.update();
+    }
   }, [navigateTo]);
 
   return (

@@ -21,7 +21,7 @@ export const NavItem = ({
   const { t } = useTranslation(undefined, { keyPrefix: 'hero.navigation' });
 
   return (
-    <li key={item} id={item}>
+    <li key={item} id={item} >
       <Link
         {...scrollerConfig}
         to={item}

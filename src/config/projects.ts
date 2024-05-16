@@ -18,8 +18,8 @@ export const PROJECTS: {
     title: 'Multi Select Component',
     href: 'https://enesctnn.github.io/rick-morty-multi-select-app/',
     description: {
-      en: 'This component provides a component that offers multiple selection functionality and can adapt to different design needs. Developed with React, TypeScript and Apollo Client, it retrieves data with GraphQL via the Rick and Morty API. Features include pulling data based on user queries, displaying character images, names, and how many episodes they appear in, adding/removing selected results, keyboard navigation support, loading status display, and error handling.',
-      tr: 'Bu komponent, çoklu seçim işlevselliği sunan ve farklı tasarım ihtiyaçlarına uyum sağlayabilen bir bileşen sunar. React, TypeScript ve Apollo Client ile geliştirilmiş olup, verileri Rick and Morty API üzerinden GraphQL ile alır. Özellikleri arasında kullanıcı sorgularına göre veri çekme, karakter resimleri, isimleri ve kaç bölümde göründüklerini gösterme, seçilen sonuçları ekleme/çıkarma, klavye gezinme desteği, yükleme durumu gösterimi ve hata işleme bulunur.',
+      en: 'This project provides a component that offers multiple selection functionality and can adapt to different design needs. Developed with React, TypeScript and Apollo Client, it retrieves data with GraphQL via the Rick and Morty API. Features include pulling data based on user queries, displaying character images, names, and how many episodes they appear in, adding/removing selected results, keyboard navigation support, loading status display, and error handling.',
+      tr: 'Bu proje, çoklu seçim işlevselliği sunan ve farklı tasarım ihtiyaçlarına uyum sağlayabilen bir komponent sunar. React, TypeScript ve Apollo Client ile geliştirilmiş olup, verileri Rick and Morty API üzerinden GraphQL ile alır. Özellikleri arasında kullanıcı sorgularına göre veri çekme, karakter resimleri, isimleri ve kaç bölümde göründüklerini gösterme, seçilen sonuçları ekleme/çıkarma, klavye gezinme desteği, yükleme durumu gösterimi ve hata geri bildirimleri bulunur.',
     },
     technologies: [
       'Javascript',

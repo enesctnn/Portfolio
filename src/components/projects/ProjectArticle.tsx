@@ -2,6 +2,7 @@ import { cn } from '../../lib/utils';
 import { ExternalLinkArrow } from '../ui/external-link-arrow';
 import { HoverCard } from '../ui/hover-card';
 import { ProjectDescription } from './ProjectDescription';
+import { TechnologiesUsed } from './Technologies';
 
 export const ProjectArticle = ({
   title,
@@ -17,8 +18,8 @@ export const ProjectArticle = ({
   date?: string;
   technologies?: string[];
 }) => (
-  <HoverCard href={projectLink} role="listitem" className="gap-x-3 ">
-    <div className="relative py-1 max-lg:h-96">
+  <HoverCard href={projectLink} role="listitem" className="gap-3 ">
+    <div className="relative py-1 max-lg:aspect-video">
       <img
         src={img.src}
         alt={img.alt}
@@ -41,20 +42,7 @@ export const ProjectArticle = ({
     <div className="flex flex-col gap-y-2">
       <ExternalLinkArrow title={title} />
       <ProjectDescription description={description} />
-      <div
-        className="mt-auto flex w-full flex-wrap gap-1"
-        aria-label="technologies used in related project"
-      >
-        {technologies &&
-          technologies.map(feature => (
-            <p
-              key={feature}
-              className="w-max rounded-full bg-nyanza-100 px-2 py-[6px] text-xs text-nyanza max-lg:text-sm"
-            >
-              {feature}
-            </p>
-          ))}
-      </div>
+      {technologies && <TechnologiesUsed technologies={technologies} />}
     </div>
   </HoverCard>
 );

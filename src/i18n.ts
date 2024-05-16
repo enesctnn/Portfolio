@@ -10,7 +10,6 @@ i18next
   .init({
     lng: 'en',
     fallbackLng: 'en',
-    debug: true,
     backend: { loadPath: 'locales/{{lng}}/{{ns}}.json' },
   });
 

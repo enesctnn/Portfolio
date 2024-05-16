@@ -7,7 +7,33 @@
     "navigation": {
       "about": "ABOUT",
       "projects": "PROJECTS",
-      "experience": "EXPERIENCE"
+      "contactme": "CONTACT ME"
+    },
+    "contactme": {
+      "form": {
+        "legend": "Send Email To Me",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "success": "Email sent!",
+        "error": "Something went wrong!",
+        "placeholders": {
+          "name": "Your Name",
+          "email": "example@email.com",
+          "message": "Your Message..."
+        },
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "sent": "Sent!",
+        "zod": {
+          "username": "Minimum 3 Characters!",
+          "email": "Invalid Email!",
+          "message": {
+            "min": "Minimum 5 Characters!",
+            "max": "Maximum 500 Characters!"
+          }
+        }
+      }
     }
   },
   "resume": {

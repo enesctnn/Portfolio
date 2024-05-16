@@ -14,7 +14,13 @@
     @apply h-full;
   }
   body {
-    @apply relative h-full font-ubuntu text-muted antialiased;
+    @apply relative h-full scroll-smooth font-ubuntu text-muted antialiased;
+  }
+  ::-webkit-scrollbar {
+    @apply h-2 w-3 bg-[#111];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-nyanza-200;
   }
 }
 
