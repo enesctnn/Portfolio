@@ -6,7 +6,6 @@ import { cn } from '../../../lib/utils';
 const scrollerConfig = {
   smooth: true,
   offset: -90,
-  duration: 500,
 };
 
 export const NavItem = ({
@@ -21,7 +20,7 @@ export const NavItem = ({
   const { t } = useTranslation(undefined, { keyPrefix: 'hero.navigation' });
 
   return (
-    <li key={item} id={item} >
+    <li key={item} id={item}>
       <Link
         {...scrollerConfig}
         to={item}

@@ -6,18 +6,17 @@ import { NavItem } from './NavItem';
 const scrollerConfig = {
   smooth: true,
   offset: -90,
-  duration: 500,
 };
 
 export function NavItems() {
   const navigateTo = useMemo<string | null>(
-    () => window.location.hash.split('#')[1] as (typeof NAVITEMS)[number],
+    () => window.location.hash.split('#')[1],
     []
   );
 
   const [activeItem, setActiveItem] = useState<string | null>(navigateTo);
 
-  const smoothScrollHandler = (elementToGo: (typeof NAVITEMS)[number]) => {
+  const smoothScrollHandler = (elementToGo: string) => {
     window.history.pushState(undefined, elementToGo, `#${elementToGo}`);
     setActiveItem(elementToGo);
   };

@@ -19,7 +19,7 @@
         "error": "Bir şeyler ters gitti!",
         "placeholders": {
           "name": "Adınız",
-          "email": "örnek@epostası.com",
+          "email": "örnek@eposta.com",
           "message": "Mesajınız..."
         },
         "submit": "Gönder",

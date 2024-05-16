@@ -7,6 +7,9 @@ import spotifyAppImg from '../assets/projects/spotify/spotify.png';
 import multiSelectGif from '../assets/projects/mutliselect/multiselect.gif';
 import multiSelectImg from '../assets/projects/mutliselect/multiselect.png';
 
+import portfolioGif from '../assets/projects/portfolio/portfolio.gif';
+import portfolioImg from '../assets/projects/portfolio/portfolio.png';
+
 export const PROJECTS: {
   title: string;
   href: string;
@@ -57,6 +60,31 @@ export const PROJECTS: {
       src: spotifyAppImg,
       alt: 'spotify app',
       gif: spotifyAppGif,
+    },
+  },
+  {
+    title: 'Personal Website',
+    href: 'https://github.com/enesctnn/Portfolio',
+    description: {
+      en: 'This project aims to represent digital presence effectively by creating a personal website. Developed using modern web technologies, this site provides a platform that includes my resume, projects, and contact information.',
+      tr: 'Bu proje, dijital varlığı etkili bir şekilde temsil etmeyi amaçlayarak kişisel bir web sitesi oluşturmayı hedefler. Modern web teknolojileri kullanılarak geliştirilen bu site, özgeçmişim, projelerim ve iletişim bilgilerimi içeren bir platform sunuyor. ',
+    },
+    technologies: [
+      'Javascript',
+      'Typescript',
+      'React',
+      'i18next',
+      'Framer-Motion',
+      'Tailwind',
+      'EmailJS',
+      'React Scroll',
+      'Zod',
+      'React Hook Form',
+    ],
+    img: {
+      src: portfolioImg,
+      alt: 'weather app image',
+      gif: portfolioGif,
     },
   },
   {
