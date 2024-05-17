@@ -10,7 +10,7 @@ export const TechnologiesUsed = ({
     {technologies.map(feature => (
       <p
         key={feature}
-        className="w-max rounded-full bg-nyanza-100 px-2 py-[6px] text-xs text-nyanza max-lg:text-base"
+        className="w-max rounded-full bg-nyanza-100 px-2 py-[6px] text-xs text-nyanza max-lg:text-sm"
       >
         {feature}
       </p>
