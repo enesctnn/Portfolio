@@ -8,7 +8,6 @@ i18next
   .use(I18NextHttpBackend)
   .use(initReactI18next)
   .init({
-    lng: 'en',
     fallbackLng: 'en',
     backend: { loadPath: 'locales/{{lng}}/{{ns}}.json' },
   });
