@@ -21,11 +21,11 @@ export const PROJECTS: {
   technologies?: string[];
 }[] = [
   {
-    title: 'Webspark Innovations Website',
+    title: `Webspark Innovations`,
     href: 'https://webspark-innovations-app.vercel.app/',
     description: {
-      en: 'The website for Webspark Innovations showcases services such as web design, social media marketing, SEO, and custom logo design, aimed at helping businesses grow. It encourages potential clients to contact the company for professional assistance and highlights their expertise in various industries.',
-      tr: 'Webspark Innovations web sitesi, işletmelerin büyümesine yardımcı olmayı amaçlayan web tasarımı, sosyal medya pazarlaması, SEO ve özel logo tasarımı gibi hizmetleri sergiliyor. Potansiyel müşterilerin profesyonel yardım için şirketle iletişime geçmesini teşvik edip ve çeşitli sektörlerdeki uzmanlıklarını öne çıkarmayı amaçlıyor.',
+      en: 'The website for Webspark Innovations showcases services such as web design, social media marketing, SEO, and custom logo design, aimed at helping business to grow. It encourages potential clients to contact the company for professional assistance and highlights their expertise in various industries.',
+      tr: 'Webspark Innovations web sitesi, işletmenin büyümesine yardımcı olmayı amaçlayan web tasarımı, sosyal medya pazarlaması, SEO ve özel logo tasarımı gibi hizmetleri sergiliyor. Potansiyel müşterilerin profesyonel yardım için şirketle iletişime geçmesini teşvik edip ve çeşitli sektörlerdeki uzmanlıklarını öne çıkarmayı amaçlıyor.',
     },
     technologies: [
       'Nextjs',
