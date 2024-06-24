@@ -10,6 +10,9 @@ import multiSelectImg from '../assets/projects/mutliselect/multiselect.png';
 import portfolioGif from '../assets/projects/portfolio/portfolio.gif';
 import portfolioImg from '../assets/projects/portfolio/portfolio.png';
 
+import websparkGif from '../assets/projects/webspark/webspark.gif';
+import websparkImg from '../assets/projects/webspark/webspark.png';
+
 export const PROJECTS: {
   title: string;
   href: string;
@@ -17,6 +20,31 @@ export const PROJECTS: {
   img: { alt: string; src: string; gif?: string };
   technologies?: string[];
 }[] = [
+  {
+    title: 'Webspark Innovations Website',
+    href: 'https://webspark-innovations-app.vercel.app/',
+    description: {
+      en: 'The website for Webspark Innovations showcases services such as web design, social media marketing, SEO, and custom logo design, aimed at helping businesses grow. It encourages potential clients to contact the company for professional assistance and highlights their expertise in various industries.',
+      tr: 'Webspark Innovations web sitesi, işletmelerin büyümesine yardımcı olmayı amaçlayan web tasarımı, sosyal medya pazarlaması, SEO ve özel logo tasarımı gibi hizmetleri sergiliyor. Potansiyel müşterilerin profesyonel yardım için şirketle iletişime geçmesini teşvik edip ve çeşitli sektörlerdeki uzmanlıklarını öne çıkarmayı amaçlıyor.',
+    },
+    technologies: [
+      'Nextjs',
+      'Javascript',
+      'Typescript',
+      'React',
+      'Tailwind',
+      'Shadcn',
+      'Framer-Motion',
+      'EmailJS',
+      'Zod',
+      'React Hook Form',
+    ],
+    img: {
+      src: websparkImg,
+      alt: 'spotify app',
+      gif: websparkGif,
+    },
+  },
   {
     title: 'Multi Select Component',
     href: 'https://enesctnn.github.io/rick-morty-multi-select-app/',
@@ -41,7 +69,7 @@ export const PROJECTS: {
   },
   {
     title: 'Spotify Profile',
-    href: 'https://github.com/enesctnn/spotify-profile-app',
+    href: 'https://enesctnn.github.io/spotify-profile-app/',
     description: {
       en: 'Spotify Profile App offers deep insights into your music habits, playlist management, and personalized recommendations. Seamlessly connect your Spotify account and explore detailed data, including top artists, tracks, playlists, and recommendations tailored to your taste. Save tracks with timestamped descriptions directly to your playlists for enhanced organization. Discover new music effortlessly. Open in Spotify to delve deeper into track, artist, user, or playlist info.',
       tr: "Spotify Profil Uygulaması, müzik alışkanlıklarınız, çalma listesi yönetiminiz ve kişiselleştirilmiş önerileriniz hakkında derinlemesine bilgiler sunar. Spotify hesabınızı sorunsuz bir şekilde bağlayın ve en iyi sanatçılar, parçalar, çalma listeleri ve zevkinize göre uyarlanmış öneriler dahil olmak üzere ayrıntılı verileri keşfedin. Gelişmiş organizasyon için parçaları zaman damgalı açıklamalarla doğrudan çalma listelerinize kaydedin. Yeni müziği zahmetsizce keşfedin. Parça, sanatçı, kullanıcı veya çalma listesi bilgilerini daha derinlemesine incelemek için Spotify'da açın.",
